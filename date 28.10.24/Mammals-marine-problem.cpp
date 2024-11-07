@@ -35,7 +35,7 @@ int main() {
 	obj1.display1();
 	obj2.display2();
 	obj3.display3();
-	obj3.display2();
+	obj3.display1();
 	
 
 
