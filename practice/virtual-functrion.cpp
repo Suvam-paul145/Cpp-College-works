@@ -41,9 +41,10 @@ int main() {
 	animalPtr->sound(); // Outputs: Cat meows.
 
 	return 0;*/
-
+	Animal obj;
+	obj.sound();
 	Animal *animalptr;
-
+	
 	Dog dog;
 	Cat cat;
 
