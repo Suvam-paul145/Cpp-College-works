@@ -24,8 +24,8 @@ public:
 int main()
 {
     // summation obj(10, 20);
-    summation obj(20,30);
-    
+    summation obj(20, 30);
+
     obj.summationDisplay();
     obj.substraction(2, 5);
     return 0;

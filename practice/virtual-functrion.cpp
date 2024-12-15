@@ -2,31 +2,38 @@
 using namespace std;
 
 // Base class
-class Animal {
-	public:
-		// Virtual function
-		virtual void sound() {
-			cout << "Animals make sounds." << endl;
-		}
+class Animal
+{
+public:
+	// Virtual function
+	virtual void sound()
+	{
+		cout << "Animals make sounds." << endl;
+	}
 };
 
 // Derived class
-class Dog : public Animal {
-	public:
-		void sound() override {  // Override the base class virtual function
-			cout << "Dog barks." << endl;
-		}
+class Dog : public Animal
+{
+public:
+	void sound() override
+	{ // Override the base class virtual function
+		cout << "Dog barks." << endl;
+	}
 };
 
 // Another derived class
-class Cat : public Animal {
-	public:
-		void sound() override {  // Override the base class virtual function
-			cout << "Cat meows." << endl;
-		}
+class Cat : public Animal
+{
+public:
+	void sound() override
+	{ // Override the base class virtual function
+		cout << "Cat meows." << endl;
+	}
 };
 
-int main() {
+int main()
+{
 	/*/Animal* animalPtr;
 
 	Dog dog;
@@ -44,18 +51,15 @@ int main() {
 	Animal obj;
 	obj.sound();
 	Animal *animalptr;
-	
+
 	Dog dog;
 	Cat cat;
 
 	animalptr = &dog;
-	animalptr ->sound();
+	animalptr->sound();
 
 	animalptr = &cat;
-	animalptr ->sound();
-	
+	animalptr->sound();
+
 	return 0;
-	
-
-
 }
